@@ -207,6 +207,10 @@ footer .container{
     padding-top: 2rem;
 }
 
+footer p{
+  padding-left: 2rem;
+}
+
 footer a{
     text-decoration: none;
     color: #fff;
