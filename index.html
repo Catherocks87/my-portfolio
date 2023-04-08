@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Bae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+<body>
+    <div class="container-skip" id="top"><!-- This is the html to create skip links I used this code for accessibility purposes-->
+        <ul class="skip">
+          <li><a href="#products">Go to products</a></li>
+          <li><a href="#tutorials">Go to tutorials</a></li>
+        </ul>
+    </div>    
+    <header>
+        <nav role="navigation"><!-- here starts html for navbar, I used links to go to the other pages of my website-->
+            <div class="container">
+                    <div class="logo">
+                      <a href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                      </a>
+                    </div>   
+                    <ul>  
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="about.html">ABOUT</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                    </ul>      
+            </div>     
+        </nav><!-- here finish html for navbar--> 
+
+        <div class="header-cover"><!-- here starts html for cover section--> 
+        <div class="container-section">
+            <h1 role="heading" aria-level="1"> FREE SHIPPING</h1><!-- I used aria-level for the user be able to identify the titles--> 
+            <h3>ON ALL ONLINE ORDERS*</h3>
+            <h4>*CONDITIONS APPLY</h4>
+        </div>
+        </div><!-- here finish html for cover section-->
+    </header>
+        <section id="products"><!-- this id is part of the skip-links to go specifically to "products section"--> 
+            <div class="container-products"><!-- here starts container for products section--> 
+                <h2 role="heading" aria-level="2">Our Products</h2><!-- I used aria-level for the user be able to identify the subtitles--> 
+                <h3>Know more about our
+                catalogue of cosmetics</h3>
+            </div><!-- here finish container for products section-->
+
+        <div class="cosmetics"><!-- here starts content for makeup section-->
+            <div class="makeup"><!-- here starts container for makeup section--> 
+            <picture><!-- This is html code for image optimization--> 
+            <source srcset="images/eye_shadow-300_x_300.jpg"
+             media="(max-width: 640px)">
+            
+            <source srcset="images/eye_shadow-480_x_480.jpg"
+            media="(min-width: 960px)">
+            
+            <img src="images/eye_shadow.jpg" alt="shadow"> 
+            </picture>
+            <h3>Eye-shadow Palettes</h3>
+                    <p>Our Vegan eye shadow is made without any animal-derived ingredients, 
+                    using plant-based and synthetic alternatives instead.</p>
+            <a href="about.html" target="_blank">BUY</a>
+            </div><!-- here finish container for makeup section-->
+
+            <div class="makeup"><!-- here starts container for makeup section-->
+            <picture><!-- This is html code for image optimization--> 
+             <source srcset="images/nail_polish-300_x_300.jpg"
+             media="(max-width: 640px)">
+                    
+            <source srcset="images/nail_polish-480_x_480.jpg"
+            media="(min-width: 960px)">
+                    
+            <img src="images/nail_polish.jpg" alt="nail"> 
+            </picture>
+            <h3>Nail polish</h3>
+            <p>Our Cruelty-free nail polish refers to products that are not tested on animals 
+            and are made with vegan and non-toxic ingredients.</p>
+            <a href="about.html" target="_blank">BUY</a>
+            </div><!-- here finish container for makeup section-->
+
+            <div class="makeup"><!-- here starts container for makeup section-->
+            <picture><!-- This is html code for image optimization--> 
+             <source srcset="images/red-lipstick-300_x_300.jpg"
+             media="(max-width: 640px)">
+                    
+            <source srcset="images/red-lipstick-480_x_480.jpg"
+            media="(min-width: 960px)">
+                    
+            <img src="images/red-lipstick.jpg" alt="lipstick"> 
+            </picture>
+            <h3>Lipstick</h3>
+            <p>Our lipsticks contained natural ingredients that are free from harmful chemicals and toxins, 
+             that are responsibly sourced and biodegradable.</p>
+            <a href="about.html" target="_blank">BUY</a><!-- here finish container for makeup section-->
+            </div><!-- here finish content for makeup section-->
+        </div>    
+        </section>
+        <section id="tutorials"><!-- this id is part of the skip-links to go specifically to "tutorials section"-->
+            <div class="container-tutorials"><!-- here starts container for makeup section-->
+             <h3>Make Up Tutorials</h3>
+            <p>Learn how to look prettier!</p>
+            <i class="fa fa-video"></i>
+            <a href="https://www.youtube.com/" target="_blank">CLICK HERE</a>
+            </div><!-- here finish container for makeup section-->  
+      </section>
+      <footer>
+        <div class="container-footer"><!-- here starts container for footer section-->
+            <div class="copy">
+            <p>Copyright &copy; This Bae, 2023</p>
+            </div>
+            <div class="icons"><!--I used classes to add icons and  links to go to the social media pages-->
+            <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/">  
+            <i class="fa-brands fa-youtube"></i>
+            </a> 
+            <a href="https://www.instagram.com/"> 
+            <i class="fa-brands fa-instagram"></i>  
+            </a>    
+            </div> 
+        </div><!-- here finish container for footer section-->
+
+      </footer>
+   
+</body>
+</html>
