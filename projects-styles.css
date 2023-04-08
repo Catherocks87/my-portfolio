@@ -1,0 +1,180 @@
+:root{
+    --bs-white: #fff;
+    
+}
+
+
+/* style to center nav links on mobile */
+
+.nav-link {
+   
+    text-align: center;
+  
+}
+
+
+/* Navbar link color */
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:visited {
+	color: #BECBD3;
+	font-weight: bold;
+    margin-left: 2rem;
+}
+
+/* Navbar hover links */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
+	color: #C6A1CB;
+	border-bottom: 2px solid #C6A1CB;
+}
+
+.navbar-toggler{
+    color:white;
+    background-color: white;
+}
+
+
+/* Styles for titles */
+
+
+h1{
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{ 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+ }
+
+ /* Styles for banner */
+
+#banner-p{
+    background-image: url(images/cover-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    height: 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+
+}
+
+ /* Styles for icons of projects section */
+
+#links{
+    background-color: #BECBD3;
+}
+
+.icons{
+    color: var(--bs-white);
+    padding: 5rem;    
+    
+ }
+
+
+ .icons a{
+    text-decoration: none;
+    color: #301A42;
+    border-bottom: 2px solid #301A42;
+ }
+
+ .icons a:hover{
+    color:#C6A1CB;
+    border-bottom: 2px solid #C6A1CB;
+ }
+
+  /* Styles for banner titles */
+
+#title{
+    background-image: url(images/cover-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+
+}
+
+/* Styles for projects text */
+
+.container p{
+   
+    border-radius: 20px;
+
+    
+}
+
+
+
+
+/* Styles for arrow up section*/
+
+
+.badge {
+    background-color: #301A42;
+    margin-top: 5rem;
+    
+}
+
+.arrow{
+    text-align: center;
+}
+
+
+/* Styles for footer */
+
+footer {
+    background-color: #301A42;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+footer .container{
+    padding-top: 2rem;
+}
+
+footer p{
+  padding-left: 2rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2rem;
+    
+}
+
+footer a:hover {
+    color: #C6A1CB; 
+}
+
+
+/* DESKTOP STYLES START HERE */
+
+
+@media screen and (min-width: 992px){
+
+   /* Styles for titles background*/
+
+    #title{
+        height: 200px;
+      
+    
+    }
+
+
+
+
+}
