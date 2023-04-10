@@ -1,5 +1,9 @@
 :root{
-    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-blue: #D2E9FA;
+    --bs-purple: #502f88;
+    --bs-pink: #C6A1CB;
+    --bs-indigo: #301A42;
+    --bs-white: #fff;
     
 }
 
@@ -52,6 +56,7 @@
 }
 
 
+
 /* Styles for titles */
 
 
@@ -87,35 +92,7 @@ h2{
  * animation wobble-hor-bottom
  * ----------------------------------------
  */
- @-webkit-keyframes wobble-hor-bottom {
-    0%,
-    100% {
-     
-              transform: translateX(0%);
 
-              transform-origin: 50% 50%;
-    }
-    15% {
-   
-              transform: translateX(-30px) rotate(-6deg);
-    }
-    30% {
-    
-              transform: translateX(15px) rotate(6deg);
-    }
-    45% {
-     
-              transform: translateX(-15px) rotate(-3.6deg);
-    }
-    60% {
-    
-              transform: translateX(9px) rotate(2.4deg);
-    }
-    75% {
-  
-              transform: translateX(-6px) rotate(-1.2deg);
-    }
-  }
   @keyframes wobble-hor-bottom {
     0%,
     100% {
@@ -161,16 +138,16 @@ h2{
 
  .btn-custom {
     padding: 10px 10px;
-    color: #fff;
+    color: var(--bs-white);
     font-weight: bold;
-    background-color: #502f88;
+    background-color: var(--bs-indigo);
 }
 
 /* Styles for projects buttons when is hover */
 
 .btn-custom:hover { 
-  background-color:#FEFAFC;
-  color:#301A42;
+  background-color:var(--bs-white);
+  color:var(--bs-indigo);
   text-decoration: none;
   
 }
@@ -178,7 +155,7 @@ h2{
 /* Styles for bio section*/
 
 #bio{
-    background-color: #C6A1CB;
+    background-color: var(--bs-pink);
     padding: 3em;
     text-align: center;
     
@@ -188,7 +165,7 @@ h2{
 
 
 .badge {
-    background-color: #301A42;
+    background-color: var(--bs-indigo);
     margin-top: 5rem;
 }
 
@@ -196,8 +173,8 @@ h2{
 /* Styles for footer */
 
 footer {
-    background-color: #301A42;
-    color: #fff;
+    background-color: var(--bs-indigo);
+    color: var(--bs-white);
     text-align: center;
     padding: 2rem;
     
@@ -213,15 +190,52 @@ footer p{
 
 footer a{
     text-decoration: none;
-    color: #fff;
+    color: var(--bs-white);
     margin-left: 2rem;
     
 }
 
 footer a:hover {
-    color: #C6A1CB; 
+    color: var(--bs-pink);
 }
 
+/* Styles for skip links */
+
+
+.link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-decoration: none;
+    }
+    
+    .link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    }
+    
+    
+    .skip a {
+    color: var(--bs-blue);
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5rem;
+    background-color: var(--bs-indigo);
+    }
+    
+    .skip a:hover{
+    color:var(--bs-pink);
+    list-style: none;
+    
+    }
+  
+ 
 
 /* DESKTOP STYLES START HERE */
 
@@ -240,7 +254,7 @@ footer a:hover {
 
     .fa-chevron-down {
        
-        color: #fff;
+        color:var(--bs-white);
         text-align:right;
         text-decoration: none;
         animation: scale-down-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
@@ -260,32 +274,15 @@ footer a:hover {
  * animation scale-down-center
  * ----------------------------------------
  */
-@-webkit-keyframes scale-down-center {
-    0% {
-      
-              transform: scale(1);
-    }
-    100% {
-      
-              transform: scale(0.5);
-    }
-  }
+
   @keyframes scale-down-center {
     0% {
-      
               transform: scale(1);
     }
     100% {
-     
               transform: scale(0.5);
     }
   }
   
-
-
-
-
-
-
 
 }

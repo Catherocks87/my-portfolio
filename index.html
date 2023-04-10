@@ -16,8 +16,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body>        
 <header class="bg-custom fixed-top" style="font-family:'Montserrat', sans-serif; background-color: #301A42;">
+    <div class="skip">
+    <a href="#projects" class="link">Go to projects</a>
+    <a href="#bio" class="link">Go to bio</a>
+  </div>
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-custom">
           <div class="container-fluid">
@@ -28,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav w-100 justify-content-end">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                  <a class="nav-link" aria-current="page" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html">ABOUT</a>
@@ -37,22 +41,23 @@
                   <a class="nav-link" href="projects.html">PROJECTS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT</a>
+                  <a class="nav-link" href="contact.html">CONTACT</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
     </div>
-  </header>    
+  </header>
+   
       <section>
               <div id="banner" class="bg-secondary">
                 <div class="container">
                   <div class="row">
                     <div class="col-md-6">
-                      <h1 class="display-2 text-light pt-5 fw-bold m-2 ">Cat Rocks</h1>
-                       <h2 class="text-center m-5" style="color: #C6A1CB; padding-left: 10px;">MEDIA LAB</h2> 
-                       <h2 class="text-light m-5 fw-bold text-center" >Hi!, this is my space to express myself</h2>  
+                      <h1 role="heading" aria-level="1" class="display-2 text-light pt-5 fw-bold m-2 ">Cat Rocks</h1>
+                       <h2 role="heading" aria-level="2" class="text-center m-5" style="color: #C6A1CB; padding-left: 10px;">MEDIA LAB</h2> 
+                       <h2 role="heading" aria-level="2" class="text-light m-5 fw-bold text-center" >Hi!, this is my space to express myself</h2>  
                     </div>
                     <div class="col-md-6">
                       <picture>
@@ -77,16 +82,17 @@
       </section>
       <section>
         <div class="text" id="projects-title">
-          <h2 class="text-center m-5 display-5">Here are some of my projects in Graphic Design, UX/UI and Web Development.</h2>
+          <h2 role="heading" aria-level="2" class="text-center m-5 display-5">Here are some of my projects in Graphic Design, UX/UI and Web Development.</h2>
+          
         </div>
       </section>
-      <div id="projects">
+      <main id="projects">
         <div class="row">
           <div class="col-md-4">
             <div class="card rounded-0 bg-custom border-0" style=" background-color: #BECBD3;">
-              <img src="images/UX UI.jpg" class="card-img-top img-fluid rounded-5" alt="ux" style="padding: 10px;">
+              <img src="images/UX-UI.jpg" class="card-img-top img-fluid rounded-5" alt="ux" style="padding: 10px;">
               <div class="card-body">
-                <h5 class="card-title fw-bold fs-4" style="color:#502f88">UX/UI Design</h5>
+                <h5 role="heading" aria-level="5" class="card-title fw-bold fs-4" style="color:#502f88">UX/UI Design</h5>
                 <p class="card-text fs-5 lh-sm">Designed UX/UI for my own portfolio website</p>
                 <a href="projects.html" class="btn btn-custom rounded-5 w-100">SEE MORE</a>
               </div>
@@ -94,9 +100,9 @@
           </div>
           <div class="col-md-4">
             <div class="card rounded-0 bg-custom border-0" style="background-color: #BECBD3;" >
-              <img src="images/WEB COVER.jpg" class="card-img-top img-fluid rounded-5" alt="web" style="padding: 10px;">
+              <img src="images/WEB-COVER.jpg" class="card-img-top img-fluid rounded-5" alt="web" style="padding: 10px;">
               <div class="card-body">
-                <h5 class="card-title fw-bold fs-4" style="color:#502f88">Web Development</h5>
+                <h5 role="heading" aria-level="5" class="card-title fw-bold fs-4" style="color:#502f88">Web Development</h5>
                 <p class="card-text fs-5 lh-sm">Websites created using HTML,and CMS</p>
                 <a href="projects.html" class="btn btn-custom rounded-5 w-100">SEE MORE</a>
               </div>
@@ -104,37 +110,41 @@
           </div>
           <div class="col-md-4">
             <div class="card rounded-0 bg-custom border-0" style="background-color: #BECBD3;">
-              <img src="images/SOCIAL MEDIA COVER.jpg" class="card-img-top img-fluid rounded-5" alt="design" style="padding: 10px;">
+              <img src="images/SOCIAL-MEDIACOVER.jpg" class="card-img-top img-fluid rounded-5" alt="design" style="padding: 10px;">
               <div class="card-body">
-                <h5 class="card-title fw-bold fs-4" style="color:#502f88">Graphic Design</h5>
+                <h5 role="heading" aria-level="5" class="card-title fw-bold fs-4" style="color:#502f88">Graphic Design</h5>
                 <p class="card-text fs-5 lh-sm">Graphic pieces create for different design fields</p>
                 <a href="projects.html" class="btn btn-custom rounded-5 w-100">SEE MORE</a>
               </div>
             </div>
           </div>  
         </div>
-      </div>
+      </main>
       <section id="bio" class="bg-custom">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
+      
               <picture>
                 <source srcset="images/me-280_x_280.jpg"
                 media="(max-width: 680px)">
                
                <source srcset="images/me-380_x_380.jpg"
                media="(min-width: 992px)">
+               
               <img src="images/me.jpg" class="img-fluid mx-auto d-block shadow rounded-5" alt="me">
             </picture>
+      
             </div> 
             <div class="col-md-6">
-              <h1 class="display-5 text-light pt-5 fw-bold mb-5">Im Catherine</h1>
+              <h1 role="heading" aria-level="1" class="display-5 text-light pt-5 fw-bold mb-5">Im Catherine</h1>
                <p class="m-2 fs-2 lh-sm" style="color: #301A42">I'm an IMD student and
                 Graphic Designer. Welcome to my Web portfolio!</p> 
                 <a href="about.html" class="btn btn-custom rounded-5 w-75 mt-4">READ THE FULL STORY</a> 
             </div>
           </div>
           <div class="arrow">
+            
           <span class="badge rounded-4 position-relative">
             <a href="index.html"> 
             <i class="fa-solid fa-arrow-up fa-3x p-3 text-center"

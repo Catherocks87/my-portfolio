@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact-styles.css">
+</head>
+<body>
+<header class="bg-custom fixed-top" style="font-family:'Montserrat', sans-serif; background-color: #301A42;">
+  <div class="skip">
+    <a href="#form" class="link">Go to contact form</a>
+  </div>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-custom">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav w-100 justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div>
+  </header>
+  <section>
+    <div id="banner-c" class="bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="display-2 text-light pt-5 fw-bold m-2 ">Contact me</h1>
+        </div>
+        <div class="col-md-6">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_myiahq9x.json"  background="transparent"  
+          speed="1"  style="width: 250px; height: 250px;"  loop  autoplay></lottie-player>
+      </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section>
+    <div class="title" id="projects-title">
+      <h2 class="text-center display-5 fw-bold" style="color: #502f88;">Let's get in touch</h2>
+    </div>
+  </section>
+  <section id="form">
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="icon col-md-6">
+            <h2 class="display-2 text-light  fw-bold">Email me!</h2>
+            <p class="icon bg-custom fw-bold ">catherine.manrique@gmail.com</p>
+            <i class=" icon fa-solid fa-envelope d-block m-5  fa-5x icon bg-custom"></i>
+          <img src="images/cat-280_x_280.png" class="tiles img-fluid d-block m-4" alt="tiles">  
+          </div>
+          
+          <div class="col-md-6">
+            <div class="contact-container">
+              <h2 class="pb-3 fs-5 fw-bold" style="color: #502f88;">Send me a message!</h2>
+              <form role="form" action="submit-form.php" method="POST">
+                <div class="form-group">
+                  <label for="name" class="pt-2 pb-2 fw-bold" style="color: #502f88;">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" required aria-label="Name">
+                </div>
+                <div class="form-group">
+                  <label for="email" class="pt-2 pb-2 fw-bold" style="color: #502f88;">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required aria-label="email">
+                </div>
+                <div class="form-group">
+                  <label for="message" class="pt-2 pb-2 fw-bold" style="color: #502f88;">What can I do for you?</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required aria-label="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom fw-bold text-light rounded-4">SUBMIT</button>
+              </form>   
+          </div>
+          </div> 
+        </div>
+      </div>
+    </div>        
+</section>
+<footer id="social">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+      <p>© 2023 Cat Rocks</p>
+      </div> 
+      <div class="col-md-6">
+        <a href="https://www.facebook.com/catherocks/">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+          </a>
+          <a href="https://ca.linkedin.com/">  
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </a> 
+          <a href="https://www.instagram.com/cathe_rocks/"> 
+          <i class="fa-brands fa-instagram fa-2x"></i>
+          </a> 
+      </div>
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+  </body>
+  </html>
